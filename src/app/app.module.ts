@@ -18,9 +18,10 @@ import { AdminProductsComponent } from './admin/admin-products/admin-products.co
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ProductFormComponent } from './admin/product-form/product-form.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, ProductsComponent, CartComponent, CheckoutComponent, SuccessComponent, MyOrdersComponent, AdminProductsComponent, AdminOrdersComponent, LoginComponent, NotFoundComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, ProductsComponent, CartComponent, CheckoutComponent, SuccessComponent, MyOrdersComponent, AdminProductsComponent, AdminOrdersComponent, LoginComponent, NotFoundComponent, ProductFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

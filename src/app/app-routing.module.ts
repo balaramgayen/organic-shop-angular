@@ -1,3 +1,4 @@
+import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { MyOrdersComponent } from './components/my-orders/my-orders.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'my/orders', component: MyOrdersComponent },
   { path: 'admin/orders', component: AdminOrdersComponent },
   { path: 'admin/products', component: AdminProductsComponent },
+  { path: 'admin/products/new', component: ProductFormComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
