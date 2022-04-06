@@ -1,3 +1,4 @@
+import { CategoryService } from './services/category.service';
 import { environment } from './../environments/environment';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,7 +22,21 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, ProductsComponent, CartComponent, CheckoutComponent, SuccessComponent, MyOrdersComponent, AdminProductsComponent, AdminOrdersComponent, LoginComponent, NotFoundComponent, ProductFormComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    ProductsComponent,
+    CartComponent,
+    CheckoutComponent,
+    SuccessComponent,
+    MyOrdersComponent,
+    AdminProductsComponent,
+    AdminOrdersComponent,
+    LoginComponent,
+    NotFoundComponent,
+    ProductFormComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,7 +44,7 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [CategoryService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
